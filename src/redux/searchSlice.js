@@ -1,16 +1,25 @@
-// Search slice - manages search query state
+// Search slice - manages search query and category filter
 import { createSlice } from '@reduxjs/toolkit';
 
 const searchSlice = createSlice({
   name: 'search',
-  initialState: { query: '' },
+  initialState: {
+    query: '',
+    category: 'all',
+    sortBy: 'default',
+  },
   reducers: {
-    // Update search query
     setSearchQuery: (state, action) => {
       state.query = action.payload;
+    },
+    setCategory: (state, action) => {
+      state.category = action.payload;
+    },
+    setSortBy: (state, action) => {
+      state.sortBy = action.payload;
     },
   },
 });
 
-export const { setSearchQuery } = searchSlice.actions;
+export const { setSearchQuery, setCategory, setSortBy } = searchSlice.actions;
 export default searchSlice.reducer;
