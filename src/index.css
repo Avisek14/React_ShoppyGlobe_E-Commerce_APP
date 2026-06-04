@@ -96,3 +96,11 @@ a {
   justify-content: center;
   font-weight: 700;
 }
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
