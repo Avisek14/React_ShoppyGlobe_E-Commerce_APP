@@ -9,7 +9,8 @@ const useFetchProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://dummyjson.com/products');
+        // 194 products fetch - all categories
+        const response = await fetch('https://dummyjson.com/products?limit=194');
         if (!response.ok) throw new Error('Failed to fetch products');
         const data = await response.json();
         setProducts(data.products);
