@@ -15,3 +15,25 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* ===== LOADING STATE ===== */
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.status-msg {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.status-msg.error {
+  color: #e74c3c;
+  background: #fdecea;
+  border-radius: 8px;
+  margin: 20px;
+}
