@@ -273,11 +273,12 @@ a {
 .product-actions {
   padding: 14px;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .product-actions .btn {
-  flex: 1;
+  width: 100%;
   text-align: center;
 }
 
@@ -658,11 +659,33 @@ a {
 
   .product-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 
   .product-thumbnail {
-    height: 150px;
+    height: 140px;
+  }
+
+    .product-info {
+    padding: 10px;
+  }
+
+  .product-title {
+    font-size: 0.82rem;
+  }
+
+  .product-price {
+    font-size: 0.95rem;
+  }
+
+  .product-actions {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
   }
 
   .notfound-code {
@@ -670,6 +693,6 @@ a {
   }
 
   .main-content {
-    padding: 16px 12px;
+    padding: 16px 10px;
   }
 }
