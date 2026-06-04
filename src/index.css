@@ -194,3 +194,19 @@ a {
 .btn-back:hover {
   background: #ddd;
 }
+
+/* ===== SEARCH INPUT ===== */
+.search-input {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.search-input:focus {
+  border-color: #e94560;
+}
