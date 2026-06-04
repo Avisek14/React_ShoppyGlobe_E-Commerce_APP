@@ -210,3 +210,17 @@ a {
 .search-input:focus {
   border-color: #e94560;
 }
+
+/* ===== PRODUCT LIST ===== */
+.product-list-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
